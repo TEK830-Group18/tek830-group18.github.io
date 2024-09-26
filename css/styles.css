@@ -436,8 +436,8 @@ input[type='checkbox'] {
 }
 
 .navbar .logo-image img {
-    width: 76px;
-	height: 32px;
+    width: 150px;
+	height: 50px;
 }
 
 .navbar .logo-text {
@@ -920,6 +920,7 @@ input[type='checkbox'] {
 .basic-6 {
 	padding-top: 5rem;
 	padding-bottom: 10rem;
+	/* width: 100%; */
 }
 
 .basic-6 .text-container {
@@ -1171,6 +1172,36 @@ a:hover.back-to-top {
 .ex-cards-1 .card .list-unstyled .media-body h5 {
 	margin-top: 0.125rem;
 	margin-bottom: 0.375rem;
+}
+
+/* .team-card-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-gap: 20px;
+} */
+
+.team-card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 20px;
+}
+
+.team-member-card {
+	/* display: flex;
+	align-items: center; */
+	background-color: white;
+	padding: 10px 15px;
+	border-radius: 10px;
+}
+
+.team-member-card .info {
+	margin-left: 15px;
+}
+
+.team-member-card p {
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 
@@ -1625,9 +1656,9 @@ a:hover.back-to-top {
 
 	/* About */
 	.basic-6 .text-container {
-		position: absolute;
+		/* position: absolute;
 		bottom: 6rem;
-		width: 470px;
+		width: 470px; */
 	}
 
 	.basic-6 .image-container {
@@ -1635,6 +1666,29 @@ a:hover.back-to-top {
 		margin-right: 0;
 		margin-left: auto;
 	}
+
+	/* .team-card-container {
+		display: flex;
+		/* flex-direction: row; */
+		/* justify-content: space-evenly;	 */
+	}
+
+	.team-member-card {
+		display: flex;
+		align-items: center;
+		background-color: white;
+		padding: 10px 15px;
+		border-radius: 10px;
+	}
+
+	.team-member-card .info {
+		margin-left: 15px;
+	}
+
+	.team-member-card p {
+		margin-top: 0;
+		margin-bottom: 0;
+	} */
 	/* end of about */
 
 
