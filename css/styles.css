@@ -576,7 +576,16 @@ input[type='checkbox'] {
 	text-align: center;
 }
 
+.header .image-container h2 {
+	color: #ffffff;
+	font-size: 6em;
+	font-family: "Noto";
+}
+
 .header .image-container {
+	display: flex;
+	/* justify-content: center; */
+	align-items: baseline;
 	margin-bottom: 2.75rem;
 }
 
