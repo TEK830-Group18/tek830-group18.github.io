@@ -150,6 +150,7 @@ a:hover {
 	height: 2px;
 	margin-top: 0.75rem;
 	margin-bottom: 0.75rem;
+	margin-left: 0;
 	border: none;
 	background-color: #c2337b;
 }
@@ -580,6 +581,14 @@ input[type='checkbox'] {
 	color: #ffffff;
 	font-size: 6em;
 	font-family: "Noto";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.intro-text {
+	margin-top: 50px;
 }
 
 .header .image-container {
@@ -828,7 +837,7 @@ input[type='checkbox'] {
 .basic-4 {
 	padding-top: 9rem;
 	padding-bottom: 9rem;
-	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/mission-background.jpg') center center no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/kitchen.jpg') center center no-repeat;
 	background-size: cover;
 	text-align: center;
 }
@@ -1183,12 +1192,6 @@ a:hover.back-to-top {
 	margin-bottom: 0.375rem;
 }
 
-/* .team-card-container {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-	grid-gap: 20px;
-} */
-
 .team-card-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1197,8 +1200,6 @@ a:hover.back-to-top {
 }
 
 .team-member-card {
-	/* display: flex;
-	align-items: center; */
 	background-color: white;
 	padding: 10px 15px;
 	border-radius: 10px;
@@ -1212,6 +1213,11 @@ a:hover.back-to-top {
 	margin-top: 0;
 	margin-bottom: 0;
 }
+
+.left {
+	text-align: left;
+}
+
 
 
 /*************************/
@@ -1237,6 +1243,10 @@ a:hover.back-to-top {
 	}
 	/* end of details 2 */
 
+	.team-card-container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, auto);
+    }
 
 	/* Contact */
 	.form-1 form {
@@ -1676,10 +1686,9 @@ a:hover.back-to-top {
 		margin-left: auto;
 	}
 
-	/* .team-card-container {
-		display: flex;
-		/* flex-direction: row; */
-		/* justify-content: space-evenly;	 */
+	.team-card-container {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, auto);
 	}
 
 	.team-member-card {
@@ -1729,3 +1738,17 @@ a:hover.back-to-top {
 	/* end of extra pages */
 }
 /* end of min-width 1200px */
+
+@media (max-width: 1200px) {
+	.team-card-container {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(3, auto);
+	}
+}
+
+@media (max-width: 992px) {
+	.team-card-container {
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(6, auto);
+	}
+}
