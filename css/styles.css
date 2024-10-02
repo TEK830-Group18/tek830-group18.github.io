@@ -1058,8 +1058,20 @@ input[type='checkbox'] {
 	margin: 20px 0;
 }
 
+.source-container .dropdown-container:hover {
+	cursor: pointer;
+}
+
 .source-container .question-block {
 	margin-bottom: 40px;
+}
+
+.source-container h3 {
+	font-size: 24px;
+}
+
+.source-container h4 {
+	font-size: 20px;
 }
 
 .closed {
