@@ -1045,7 +1045,6 @@ input[type='checkbox'] {
 /******************/
 .article-container {
 	margin: 40px 0;
-	
 }
 
 .bottom-border-dark {
@@ -1061,6 +1060,16 @@ input[type='checkbox'] {
 
 .source-container .question-block {
 	margin-bottom: 40px;
+}
+
+.closed {
+	height: 0 !important;
+	overflow: hidden !important;
+}
+
+.open {
+	height: auto !important;
+	overflow: visible !important;
 }
 
 /******************/
