@@ -104,3 +104,26 @@
 	});
 
 })(jQuery);
+
+$(document).ready(function() {
+    console.log('ready');
+    $('#person-a-dropdown').on('click', function() {
+        $('#person-a-textblock').toggleClass('open', 'closed');
+        $('#person-a-arrow').toggleClass('fa-angle-down', 'fa-angle-up');
+    });
+    $('#person-b-dropdown').on('click', function() {
+        $('#person-b-textblock').toggleClass('open', 'closed');
+        $('#person-b-arrow').toggleClass('fa-angle-down', 'fa-angle-up');
+    });
+});
+
+$.fn.toggleClass = function(class1, class2) {
+    console.log('toggle');
+    if (this.hasClass(class1)) {
+        this.removeClass(class1);
+        this.addClass(class2);
+    } else {
+        this.removeClass(class2);
+        this.addClass(class1);
+    }
+};

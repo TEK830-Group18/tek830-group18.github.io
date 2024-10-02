@@ -1041,6 +1041,50 @@ input[type='checkbox'] {
 
 
 /******************/
+/*     Sources    */
+/******************/
+.article-container {
+	margin: 40px 0;
+}
+
+.bottom-border-dark {
+	border-bottom: 1px solid #585757;
+}
+
+.source-container .dropdown-container {
+	display: inline-flex;
+	justify-content: space-between;
+	width: 100%;
+	margin: 20px 0;
+}
+
+.source-container .dropdown-container:hover {
+	cursor: pointer;
+}
+
+.source-container .question-block {
+	margin-bottom: 40px;
+}
+
+.source-container h3 {
+	font-size: 24px;
+}
+
+.source-container h4 {
+	font-size: 20px;
+}
+
+.closed {
+	height: 0 !important;
+	overflow: hidden !important;
+}
+
+.open {
+	height: auto !important;
+	overflow: visible !important;
+}
+
+/******************/
 /*     Footer     */
 /******************/
 .footer {
