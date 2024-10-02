@@ -1041,6 +1041,29 @@ input[type='checkbox'] {
 
 
 /******************/
+/*     Sources    */
+/******************/
+.article-container {
+	margin: 40px 0;
+	
+}
+
+.bottom-border-dark {
+	border-bottom: 1px solid #585757;
+}
+
+.source-container .dropdown-container {
+	display: inline-flex;
+	justify-content: space-between;
+	width: 100%;
+	margin: 20px 0;
+}
+
+.source-container .question-block {
+	margin-bottom: 40px;
+}
+
+/******************/
 /*     Footer     */
 /******************/
 .footer {
