@@ -831,6 +831,17 @@ input[type='checkbox'] {
 }
 
 
+.demo-container {
+	margin: 2rem 2rem 8rem 2rem;
+}
+
+.demo-img {
+	padding-top: 2rem;
+	display: block;
+	margin: auto;
+	width: 1100px;
+}
+
 /*******************/
 /*     Mission     */
 /*******************/
@@ -1505,7 +1516,6 @@ a:hover.back-to-top {
 	}
 	/* end of projects */
 
-
 	/* About */
 	.basic-6 .text-container {
 		padding: 2.75rem 2.75rem 2rem 2.75rem;
@@ -1730,7 +1740,6 @@ a:hover.back-to-top {
 	}
 	/* end of strengths */
 
-
 	/* Projects */
 	.slider-1 .image-container {
 		margin-right: 2rem;
@@ -1814,11 +1823,22 @@ a:hover.back-to-top {
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(3, auto);
 	}
+
+	.demo-img {
+		width: 900px;
+	}	
 }
 
 @media (max-width: 992px) {
 	.team-card-container {
 		grid-template-columns: repeat(1, 1fr);
 		grid-template-rows: repeat(6, auto);
+	}
+
+	.demo-img {
+		width: 700px;
+		margin-left: 0;
+		margin-right: 0;
+		padding: 0;
 	}
 }
