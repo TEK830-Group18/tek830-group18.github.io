@@ -451,7 +451,7 @@ input[type='checkbox'] {
 
 .offcanvas-collapse {
 	position: fixed;
-	top: 3.25rem; /* adjusts the height between the top of the page and the offcanvas menu */
+	top: 3.25rem;
 	bottom: 0;
 	left: 100%;
 	width: 100%;
@@ -1087,7 +1087,37 @@ input[type='checkbox'] {
 }
 
 .design-process .basic-1 {
-	padding-top: 9rem;
+	padding: 5rem 0;
+}
+
+/******************/
+/*     Presentation    */
+/******************/
+
+.presentation-container {
+	position: relative; 
+	width: 100%; 
+	height: auto; 
+	padding-top: 56.2500%;
+	padding-bottom: 0; 
+	box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); 
+	/* margin-top: 1.6em; margin-bottom: 0.9em;  */
+	overflow: hidden;
+	border-radius: 8px; 
+	will-change: transform;
+	display: block;
+}
+
+.presentation-container iframe {
+	position: absolute;
+	width: 75%;
+	height: 75%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: none;
+	padding: 0;
+	margin: 0;
 }
 
 /******************/
