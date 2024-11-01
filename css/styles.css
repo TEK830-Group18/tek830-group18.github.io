@@ -643,6 +643,20 @@ input[type='checkbox'] {
 	color: #ffffff;
 }
 
+/*********************/
+/*    Pitch Video    */
+/*********************/
+.pitch-video-container {
+	width: 100%;
+	display: flex;
+}
+
+.pitch-video {
+	margin: 200px auto 0 auto;
+	width: 1180px;
+	cursor: pointer;
+	aspect-ratio: 16 / 9;
+}
 
 /*********************/
 /*     Details 1     */
@@ -1859,6 +1873,10 @@ a:hover.back-to-top {
 		grid-template-rows: repeat(3, auto);
 	}
 
+	.pitch-video, .demo-img {
+		width: 970px;
+	}
+
 	.demo-img {
 		width: 900px;
 	}	
@@ -1872,6 +1890,10 @@ a:hover.back-to-top {
 	.team-card-container {
 		grid-template-columns: repeat(1, 1fr);
 		grid-template-rows: repeat(6, auto);
+	}
+
+	.pitch-video, .demo-img {
+		width: 100%;
 	}
 
 	.demo-img {
