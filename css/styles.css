@@ -835,6 +835,11 @@ input[type='checkbox'] {
 	margin: 2rem 2rem 8rem 2rem;
 }
 
+#demo-illustration {
+	padding-top: 0;
+	padding-bottom: 10rem;
+}
+
 .demo-img {
 	padding-top: 2rem;
 	display: block;
